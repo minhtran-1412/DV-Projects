@@ -15,6 +15,27 @@ This repository contains my Digital Verification portfolio using SystemVerilog.
 
 | UVM FIFO | ⏳ Planned |
 
+## Progress
+
+| Project | Status |
+|---------|--------|
+
+| FIFO RTL | ✅ |
+
+| Basic Testbench | ✅ |
+
+| Random Stimulus | ⬜ |
+
+| Driver | ⬜ |
+
+| Monitor | ⬜ |
+
+| Scoreboard | ⬜ |
+
+| Functional Coverage | ⬜ |
+
+| Assertions | ⬜ |
+
 ## Skills
 
 - SystemVerilog

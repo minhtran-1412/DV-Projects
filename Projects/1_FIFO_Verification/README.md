@@ -20,7 +20,7 @@ Implemented a parameterized synchronous FIFO in SystemVerilog.
 ## Waveform
 
 This is just the first mini project.
-![Waveform](Images/Result%20Project%201.png)
+![Waveform](Docs/waveform%20FIFO_TB.png)
 
 Next:
 
