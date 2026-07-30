@@ -14,6 +14,8 @@ logic [7:0] dout;
 logic full;
 logic empty;
 
+integer i;
+
 fifo dut(
     .clk(clk),
     .rst_n(rst_n),
@@ -25,19 +27,19 @@ fifo dut(
     .empty(empty)
 );
 
-// Clock
+// Clock Generation
 initial begin
     clk = 0;
     forever #5 clk = ~clk;
 end
 
-// Dump waveform
+// Waveform Dump
 initial begin
     $dumpfile("wave.vcd");
-    $dumpvars(0,fifo_tb);
+    $dumpvars(0, fifo_tb);
 end
 
-// Test
+// Main Test
 initial begin
 
     rst_n = 0;
@@ -48,32 +50,35 @@ initial begin
     #20;
     rst_n = 1;
 
-    // Write 11
-    @(posedge clk);
-    wr_en = 1;
-    din = 8'h11;
+    // Random Write
+    for(i=0;i<8;i++) begin
+        @(posedge clk);
+        wr_en = 1;
+        rd_en = 0;
+        din = $urandom_range(0,255);
 
-    // Write 22
-    @(posedge clk);
-    din = 8'h22;
-
-    // Write 33
-    @(posedge clk);
-    din = 8'h33;
+        $display("[%0t] WRITE : %0d",$time,din);
+    end
 
     @(posedge clk);
     wr_en = 0;
 
     // Read
-    @(posedge clk);
-    rd_en = 1;
-
-    repeat(3)
+    for(i=0;i<8;i++) begin
         @(posedge clk);
+        rd_en = 1;
 
+        $display("[%0t] READ : %0d",$time,dout);
+    end
+
+    @(posedge clk);
     rd_en = 0;
 
     #20;
+
+    $display("-----------------------------");
+    $display("Simulation Finished");
+    $display("-----------------------------");
 
     $finish;
 
