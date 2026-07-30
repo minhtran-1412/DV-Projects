@@ -1,0 +1,17 @@
+# Simulation outputs
+work/
+transcript
+*.wlf
+*.vcd
+*.log
+*.jou
+*.pb
+*.bak
+*.tmp
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
