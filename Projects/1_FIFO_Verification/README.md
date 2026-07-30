@@ -19,7 +19,8 @@ Implemented a parameterized synchronous FIFO in SystemVerilog.
 
 ## Waveform
 
-![Waveform](C:\Users\Meo Meo\OneDrive\Máy tính\,,,\Projects DV\Projects\Images\Result Project 1.png)
+This is just the first mini project.
+![Waveform](Images/Result%20Project%201.png)
 
 Next:
 
