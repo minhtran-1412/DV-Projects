@@ -1,20 +1,23 @@
 # Digital Verification Projects
 
-This repository contains my Digital Verification learning journey using SystemVerilog.
+This repository contains my Digital Verification portfolio using SystemVerilog.
 
 ## Projects
 
-- FIFO Verification (In Progress)
-- UART Verification (Coming Soon)
-- APB Verification (Coming Soon)
-- UVM FIFO (Coming Soon)
+| Project | Status |
+|---------|--------|
+
+| FIFO Verification | 🚧 In Progress |
+| UART Verification | ⏳ Planned |
+| APB Verification | ⏳ Planned |
+| UVM FIFO | ⏳ Planned |
 
 ## Skills
 
 - SystemVerilog
 - RTL Design
-- Random Stimulus
+- Constrained Random Verification
 - Scoreboard
 - Functional Coverage
 - Assertions
-- UVM
+- UVM (Coming Soon)
