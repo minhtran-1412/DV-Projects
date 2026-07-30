@@ -8,8 +8,11 @@ This repository contains my Digital Verification portfolio using SystemVerilog.
 |---------|--------|
 
 | FIFO Verification | 🚧 In Progress |
+
 | UART Verification | ⏳ Planned |
+
 | APB Verification | ⏳ Planned |
+
 | UVM FIFO | ⏳ Planned |
 
 ## Skills
